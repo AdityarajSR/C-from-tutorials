@@ -8,8 +8,8 @@ class complex{
 
 // NEEChe vali line se ye specify kara ja raha hai ki nonmember -- sumcomplex class complex ka private 
 // data access kar sakta hai ab
-        friend complex sumcomplex(complex o1, complex o2);
         
+        friend complex sumcomplex(complex o1, complex o2);
         void setnumber (int n1, int n2){
             a = n1;
             b = n2;

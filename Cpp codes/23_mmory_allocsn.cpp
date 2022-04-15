@@ -19,7 +19,7 @@ public:
 };
 
 void Shop ::setPrice(void)
-{
+{                  
     // mai int main function mein baar baar displayPrice likhne ki jagah yaha par loop bhi laga sakta hoon //
 
     cout << "Enter Id of your item no " << counter + 1 << endl;

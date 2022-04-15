@@ -7,12 +7,11 @@ using namespace std;
 // class Complex;             // ------------> Forward declaration
 class Complex
 {
-
     int a, b;
-
-    //   IDHAR SE MILTI HAI INDIVIDUAL PERMISSION
     friend int Calculator ::sumRealComplex(Complex o1, Complex o2);
     friend int Calculator ::sumCompComplex(Complex o1, Complex o2);
+
+    //   IDHAR SE MILTI HAI INDIVIDUAL PERMISSION
     //    calculator class ko complex class k variables ko access karne ki permission
     //    mil gayi hai using the above lines
 // --------------------------------------------------------------------------------------------------------    
@@ -35,27 +34,21 @@ public:
 class Calculator
 {
 public:
-    int add(int j, int k)
+    int add(int a, int b)
     {
-        return (j + k);
+        return (a + b);
     }
 
-    int sumRealComplex(Complex, Complex);
-    int sumCompComplex(Complex, Complex);
-};
-
-
-
-int Calculator ::sumRealComplex(Complex o1, Complex o2)
+int sumRealComplex(Complex o1, Complex o2)
 {
     return (o1.a + o2.a);
 }
 
-int Calculator ::sumCompComplex(Complex o1, Complex o2)
+int sumCompComplex(Complex o1, Complex o2)
 {
     return (o1.b + o2.b);
 }
-
+};
 
 int main()
 {

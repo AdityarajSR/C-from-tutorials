@@ -30,7 +30,7 @@ public:
 
     static void getCount(void){
         // cout<<id; // throws an error--------> This STATIC FUNCTION CAN USE ONLY STATIC IDENTIFIER
-        cout<<"The value of count is "<<count<<endl;
+        cout<<"The value of count due to static keyword is "<<count<<endl;
     }
 // UPAR vali line mein ek static function banaya gyaa hai and ek static function bas static variables ko hi
 //  ACCESS kar sakta hai 
